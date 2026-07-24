@@ -1,0 +1,34 @@
+# Starter label set. Apply with a tool like github-label-sync:
+#   npx github-label-sync --access-token <token> --labels .github/labels.yml streamelements/issues
+
+- name: needs-triage
+  color: ededed
+  description: New, not yet reviewed by the team.
+
+- name: bug
+  color: d73a4a
+  description: Something is broken.
+
+- name: enhancement
+  color: a2eeef
+  description: A feature request or improvement.
+
+- name: confirmed
+  color: 0e8a16
+  description: Reproduced and accepted — synced to the internal tracker.
+
+- name: champion
+  color: 6f42c1
+  description: Reported by a member of the Champions group.
+
+- name: needs-info
+  color: fbca04
+  description: Waiting on more detail from the reporter.
+
+- name: duplicate
+  color: cfd3d7
+  description: Already tracked in another issue.
+
+- name: wontfix
+  color: ffffff
+  description: We've decided not to act on this.

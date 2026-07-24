@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Account, billing, or payout help
+    url: https://support.streamelements.com
+    about: For account, billing, payout, and "how do I…" questions, use Support — it's faster and private.
+  - name: Security vulnerability
+    url: https://github.com/streamelements/issues/blob/main/SECURITY.md
+    about: Never report security problems in public. Read this for how to report privately.
+  - name: Champions Discord
+    url: https://discord.gg/streamelements
+    about: Chat with the community and the Champions group.

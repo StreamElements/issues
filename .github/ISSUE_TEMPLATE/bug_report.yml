@@ -1,0 +1,82 @@
+name: Bug report
+description: Something is broken or behaves the wrong way.
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Fill in what you can — the more detail, the faster we can act.
+
+        **Do not post private information.** This issue is public. No passwords, tokens, API keys, or email addresses.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you start
+      options:
+        - label: I searched existing issues and this isn't a duplicate.
+          required: true
+        - label: This is a bug, not an account, billing, or support question (those go to support.streamelements.com).
+          required: true
+        - label: This isn't a security problem (those are reported privately — see SECURITY.md).
+          required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Describe the problem. What did you see?
+      placeholder: When I click X, Y happens instead of Z.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: What should have happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we make it happen ourselves?
+      placeholder: |
+        1. Go to…
+        2. Click…
+        3. See…
+    validations:
+      required: true
+  - type: input
+    id: product-area
+    attributes:
+      label: Where in the product
+      description: Which part of StreamElements? (e.g. Overlays, Chatbot, Store, Tipping page, OBS.Live)
+      placeholder: Overlays
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Web dashboard
+        - OBS.Live / desktop app
+        - Mobile
+        - Streaming platform (Twitch / YouTube / etc.)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser and version, OS, app version — whatever's relevant.
+      placeholder: Chrome 126 on Windows 11
+    validations:
+      required: false
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or recording
+      description: Drag images or a short clip in here if you have them. Blur out anything private first.
+    validations:
+      required: false
