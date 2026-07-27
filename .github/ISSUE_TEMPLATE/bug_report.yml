@@ -49,7 +49,7 @@ body:
     id: product-area
     attributes:
       label: Where in the product
-      description: Which part of StreamElements? (e.g. Overlays, Chatbot, Store, Tipping page, OBS.Live)
+      description: Which part of StreamElements? (e.g. Overlays, Chatbot, Store, Tipping page, SE.Live)
       placeholder: Overlays
     validations:
       required: true
@@ -59,7 +59,7 @@ body:
       label: Platform
       options:
         - Web dashboard
-        - OBS.Live / desktop app
+        - SE.Live / desktop app
         - Mobile
         - Streaming platform (Twitch / YouTube / etc.)
         - Other
